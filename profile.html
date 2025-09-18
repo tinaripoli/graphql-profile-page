@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="profile-container">
+        <nav class="navbar">
+            <h1>Your Profile</h1>
+            <button id="logout-btn">Logout</button>
+        </nav>
+        
+        <div class="user-info">
+          <h2>Basic Information</h2>
+          <p><strong>Username:</strong> <span id="username-display"></span></p>
+          <p><strong>Total XP:</strong> <span id="xp-display"></span></p>
+          <p><strong>Skills:</strong></p>
+          <div id="skills-display" class="skills-container"></div>
+      </div>
+
+        <div class="grades-section">
+          <h2>Grades Overview</h2>
+          <div class="grades-list" id="grades-list"></div>
+        </div>
+
+        <div class="graphs-container">
+            <div class="graph-card">
+                <h3>XP Progress Over Time</h3>
+                <div id="xpChart"></div>
+            </div>
+            <div class="graph-card">
+                <h3>Project Success Rate</h3>
+                <div id="projectChart"></div>
+            </div>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>
